@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-dark antialiased;
+  }
+}
+
+@layer components {
+  /* Buttons */
+  .btn-primary {
+    @apply inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold
+           hover:bg-dark transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5;
+  }
+  .btn-secondary {
+    @apply inline-block bg-white text-primary border-2 border-white px-8 py-3 rounded-full
+           font-semibold hover:bg-primary hover:text-white transition-all duration-300;
+  }
+  .btn-outline {
+    @apply inline-block border-2 border-primary text-primary px-8 py-3 rounded-full
+           font-semibold hover:bg-primary hover:text-white transition-all duration-300;
+  }
+  .btn-danger {
+    @apply inline-block bg-red-600 text-white px-6 py-2 rounded-lg font-medium
+           hover:bg-red-700 transition-colors duration-200;
+  }
+
+  /* Section headings */
+  .section-title {
+    @apply text-3xl md:text-4xl font-heading font-bold text-dark mb-4;
+  }
+  .section-subtitle {
+    @apply text-lg text-gray-dark max-w-2xl mx-auto;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300;
+  }
+
+  /* Admin sidebar link */
+  .admin-link {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-primary hover:text-white transition-all duration-200 font-medium;
+  }
+  .admin-link.active {
+    @apply bg-primary text-white;
+  }
+
+  /* Form inputs */
+  .form-input {
+    @apply w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none
+           focus:ring-2 focus:ring-primary/40 focus:border-primary transition-colors;
+  }
+  .form-label {
+    @apply block text-sm font-semibold text-dark mb-1;
+  }
+}

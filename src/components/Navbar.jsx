@@ -47,14 +47,22 @@ export default function Navbar() {
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative h-12 w-36">
+          <div className="relative h-12 w-12 flex-shrink-0">
             <Image
               src="/logo.png"
               alt="Göztepe Veteriner Kliniği"
               fill
-              className="object-contain object-left"
+              className="object-contain"
               priority
             />
+          </div>
+          <div>
+            <p className={`font-heading font-bold text-lg leading-tight ${scrolled || !isHome ? 'text-dark' : 'text-white'}`}>
+              Göztepe Veteriner
+            </p>
+            <p className={`text-xs leading-tight ${scrolled || !isHome ? 'text-gray-dark' : 'text-white/80'}`}>
+              Kliniği
+            </p>
           </div>
         </Link>
 

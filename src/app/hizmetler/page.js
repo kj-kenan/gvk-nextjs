@@ -7,11 +7,6 @@ import { getServices } from '@/lib/queries';
 import ServiceCard from '@/components/ServiceCard';
 import Loading from '@/components/Loading';
 
-export const metadata = {
-  title: 'Hizmetlerimiz',
-  description: 'Göztepe Veteriner Kliniği — Dahiliye, cerrahi, radyoloji, kardiyoloji, KBB, anesteziyoloji ve acil veteriner hizmetleri.',
-};
-
 export default function ServicesPage() {
   const { t } = useLanguage();
   const [services, setServices] = useState([]);

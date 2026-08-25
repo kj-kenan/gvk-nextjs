@@ -14,9 +14,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">GV</span>
-              </div>
+              <img src="/logo.png" alt="Göztepe Veteriner" className="w-12 h-auto" />
               <div>
                 <p className="font-heading font-bold text-lg">Göztepe Veteriner</p>
                 <p className="text-white/60 text-xs">Kliniği</p>
@@ -83,7 +81,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center space-x-3">
             <a
-              href="https://www.instagram.com/goztepeveteriner"
+              href="https://www.instagram.com/gveteriner"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
@@ -91,7 +89,7 @@ export default function Footer() {
               <FaInstagram />
             </a>
             <a
-              href="https://www.facebook.com/goztepeveteriner"
+              href="https://www.facebook.com/goztepevet"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors"

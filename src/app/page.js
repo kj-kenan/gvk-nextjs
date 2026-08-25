@@ -150,7 +150,7 @@ export default function Home() {
               className="text-center mb-12"
             >
               <h2 className="section-title">{t('Uzman Ekibimiz', 'Our Expert Team')}</h2>
-              <p className="section-subtitle">{t('Alanında uzman veteriner hekimlerimiz', 'Our expert veterinarians')}</p>
+              <p className="section-subtitle">{t(' ', ' ')}</p>
             </motion.div>
             <div className="flex flex-wrap justify-center gap-8">
               {team.map((member, index) => (
